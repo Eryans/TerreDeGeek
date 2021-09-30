@@ -25,6 +25,7 @@ header>div{
 }
 main{
     background: brown;
+    min-height: 80vh;
 }
 main>div{
     flex-flow: column wrap;
