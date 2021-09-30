@@ -68,6 +68,7 @@ footer{
     background: rgb(79, 156, 2);
     border-radius: 4px;
     width: 80%;
+    padding: 4px;
     align-self: center;
     text-align: center;
 }
@@ -96,4 +97,10 @@ li{
 .flexwrap{
     display: flex;
     flex-wrap: wrap;
+}
+.icon{
+    margin: 4px;
+    padding: 4px;
+    height:30px;
+    width: 30px;
 }
