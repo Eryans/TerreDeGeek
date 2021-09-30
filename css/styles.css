@@ -1,0 +1,31 @@
+nav{
+    background: gray;
+}
+header{
+    position: relative;
+    background: green;
+}
+header>div{
+    position: absolute;
+    color:white;
+    top:0;
+}
+main{
+
+}
+main>div{
+    flex-flow: column wrap;
+    align-items: center;
+}
+main>div>article{
+    background: tomato;
+    width:80%;
+    margin: 3px 0 3px 0;
+}
+footer{
+    background: chartreuse;
+}
+
+.flex{
+    display: flex;
+}
