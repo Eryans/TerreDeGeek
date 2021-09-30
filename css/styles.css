@@ -1,6 +1,10 @@
+
 nav{
-    background: gray;
+    position: absolute;
+    z-index: 1;
+    justify-content: flex-end;
 }
+
 header{
     position: relative;
     background: green;
@@ -10,8 +14,12 @@ header>div{
     color:white;
     top:0;
 }
+.headerImg{
+    width: 100%;
+    height: 50vh;
+}
 main{
-
+    background: brown;
 }
 main>div{
     flex-flow: column wrap;
@@ -20,12 +28,67 @@ main>div{
 main>div>article{
     background: tomato;
     width:80%;
+    height: 45vh;
+    padding: 4px;
     margin: 3px 0 3px 0;
+    border-radius: 4px;
 }
-footer{
-    background: chartreuse;
+main>div>article>div{
+    height:60%;
+}
+main>div>article>div>a>img{
+    width:100%;
+    height: 100%;
+    border-radius: 4px 0 0 4px;
+}
+main>div>article>div>ul{
+    background: chocolate;
+    justify-content:space-around;
+    border-radius: 0 4px 4px 0;
+}
+main>div>article>div>ul>li{
+    display: inline-block;
+    width: 30vw;
+    padding: 4px;
+    margin: 4px;
+    word-wrap: break-word;
+    text-align: center;
 }
 
+footer{
+    background: chartreuse;
+    justify-content: center;
+}
+.footerSection{
+    background: rgb(79, 156, 2);
+    border-radius: 4px;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+}
+ul{
+    margin:0;
+    padding: 0;
+    white-space: normal;
+}
+li{
+    list-style: none;
+}
+.contact{
+    justify-content: space-evenly;
+}
 .flex{
     display: flex;
+}
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
 }

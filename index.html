@@ -29,14 +29,16 @@
 
 <body>
   <!-- Add your site or application content here -->
-  <nav>
+  <!--####################### NAV ###########################-->
+  <nav class="flex">
     <button><a href="#">Home</a></button>
     <button><a href="#">About</a></button>
     <button><a href="#">Contact</a></button>
     <button><a href="#">Connexion</a></button>
   </nav>
+  <!--####################### HEADER ###########################-->
   <header>
-    <img src="img/headerPic.jpg" alt="image de fond" height="300px" width="100%">
+    <img class="headerImg" src="img/headerPic.jpg" alt="image de fond">
     <div>
       <h1>Terre de Geek</h1>
       <p>
@@ -44,71 +46,68 @@
       </p>
     </div>
   </header>
+  <!--####################### MAIN ###########################-->
   <main>
-    <div class="flex">
-      <article class="flex">
-        <div>
-        <a href="#"><img src="img/robotArm.jpg" alt="image du produit" height="50px" width="100px"></a>
-        <ul>
-          <li>Nom : blabla</li>
-          <li>Prix : XXX €</li>
+    <div class="container flex">
+      <article class="flexcolumn card">
+        <div class="flexrow">
+        <a href="#"><img src="img/robotArm.jpg" alt="image du produit" ></a>
+        <ul class="flexcolumn">
+          <li>Xvibrotube BX4900</li>
+          <li>Prix : 666 €</li>
         </ul>
         </div>
         <div>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque deleniti saepe hic consequatur optio perspiciatis.</p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque deleniti saepe hic consequatur optio perspiciatis<a href="#">...Read more</a></p>
         </div>
       </article>
-      <article class="flex">
-        <div>
-        <a href="#"><img src="img/robotArm.jpg" alt="image du produit" height="50px" width="100px"></a>
-        <ul>
-          <li>Nom : blabla</li>
-          <li>Prix : XXX €</li>
+      <article class="flexcolumn card">
+        <div class="flexrow">
+        <a href="#"><img src="img/robotArm.jpg" alt="image du produit"></a>
+        <ul class="flexcolumn">
+          <li>Discolaser de Dorothée</li>
+          <li>Prix : 9.99 €</li>
         </ul>
         </div>
         <div>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque deleniti saepe hic consequatur optio perspiciatis.</p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque deleniti saepe hic consequatur optio perspiciatis<a href="#">...Read more</a></p>
         </div>
       </article>
-      <article class="flex">
-        <div>
-        <a href="#"><img src="img/robotArm.jpg" alt="image du produit" height="50px" width="100px"></a>
-        <ul>
-          <li>Nom : blabla</li>
-          <li>Prix : XXX €</li>
+      <article class="flexcolumn card">
+        <div class="flexrow">
+        <a href="#"><img src="img/robotArm.jpg" alt="image du produit"></a>
+        <ul class="flexcolumn">
+          <li>Nom : Epée du forum</li>
+          <li>Prix : 349 €</li>
         </ul>
         </div>
         <div>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque deleniti saepe hic consequatur optio perspiciatis.</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque deleniti saepe hic consequatur optio perspiciatis<a href="#">...Read more</a></p>
         </div>
       </article>
     </div>
   </main>
-  <footer>
-    <section>
+  <!--####################### FOOTER ###########################-->
+  <footer class="flexcolumn">
+    <section class="footerSection">
       <h3>Mention Légale</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta exercitationem tempore sit facere quasi quis magnam deleniti assumenda eligendi, odit reiciendis nemo ad quo corrupti recusandae ratione voluptatum doloribus excepturi.</p>
+      <p>
+        Terre de geek™, SARL<br>
+        42 rue de la verité Evreux 27000,
+        Mr Dermain,
+        02.32.42.27.76 tayrdegik@geek.com
+      </p>
     </section>
-    <div>
       <section>
-        <h3>Contact</h3>
-        <div>
-          <ul>
-            <li>numéro de téléphone</li>
-            <li>adresse email</li>
-          </ul>
-        </div>  
-        <div>
-          <ul>
+          <ul class="contact flexrow">
             <li><a href="#">twitter</a></li>
             <li><a href="#">github</a></li>
             <li><a href="#">facebook</a></li>
           </ul>
-        </div>
       </section>
-
-    </div>
   </footer>
+
+  
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
