@@ -1,34 +1,58 @@
 
+/* ------------------- Var -------------------*/
+:root{
+    --color-grayish : #d9d9d9;
+    --color-greenishblue : #3c6e71;
+    --color-blackbrownish : #353535;
+    --color-bluish : #284B63;
+}
 body{margin: 0;}
 /* ------------------- Nav -----------------*/
 nav{
     position: absolute;
     z-index: 1;
-    background: rgba(71, 148, 71, 0.397);
     width: 100%;
     justify-content: space-between;
 }
 nav>div>button{
+    opacity: 1;
     width: auto;
     text-align: left;
+    background: rgba(107, 107, 107, 0.418);
+    border:1px solid var(--color-grayish);
+    text-decoration: none;
+}
+nav a{
+    color:var(--color-grayish);
+    text-decoration: none;
+}
+nav>div>button:hover{
+    color: red;
+}
+nav a:visited{
+    color: var(--color-grayish);
 }
 /* --------------------- Header -----------------*/
 header{
     position: relative;
-    background: rgb(0, 255, 0);
+    min-height: 10vh;
+    background: var(--color-blackbrownish);
 }
 header>div{
     position: absolute;
-    color:white;
+    color: white;
     top:0;
     font-size: 20px;
 }
 .headerImg{
     width: 100%;
+    height: 50vh;
+    transform: scaleX(-1);
 }
 /* ------------------ Main -----------------------*/
 main{
-    background: brown;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(60,110,113,1) 25%, rgba(60,110,113,1) 27%, rgba(60,110,113,1) 33%, rgba(40,75,99,1) 100%);
     min-height: 80vh;
 }
 main>div{
@@ -36,11 +60,12 @@ main>div{
     align-items: center;
 }
 main>div>article{
-    background: tomato;
+    background: var(--color-bluish);
     width:80%;
     height: 45vh;
-    margin: 3px 0 3px 0;
+    margin: 10px 0 10px 0;
     border-radius: 4px;
+    box-shadow: black 0px 2px 5px;
 }
 main>div>article>div{
     height:60%;
@@ -51,7 +76,7 @@ main>div>article>div>a>img{
     border-radius: 4px 0 0 0;
 }
 main>div>article>div>ul{
-    background: chocolate;
+    background: var(--color-grayish);
     justify-content:space-around;
     border-radius: 0 4px 4px 0;
 }
@@ -65,17 +90,18 @@ main>div>article>div>ul>li{
 }
 /* -------------------------------- footer -------------------- */
 footer{
-    background: chartreuse;
+    background: var(--color-greenishblue);
     justify-content: center;
 }
 .footerSection{
-    background: rgb(79, 156, 2);
+    background: var(--color-blackbrownish);
+    color:#d9d9d9;
     border-radius: 4px;
     width: 80%;
     align-self: center;
     text-align: center;
     font-size: 10px;
-}
+    box-shadow: 1px 1px 0px #6fa1a3;}
 ul{
     margin:0;
     padding: 0;
@@ -111,7 +137,13 @@ li{
     width: 30px;
 }
 .itemdescription{
-    background: cornflowerblue;
+    background: var(--color-bluish);
+    color:white
+}
+/* Custom header img for other page*/
+.headerImgReduced{ 
+    height: 10vh;
+    width: 100%;
 }
 
 /** -------------------------- Product Page ---------------------- */
@@ -125,12 +157,12 @@ main>section{
 main>section>article{
     align-items: center;
     width:90%;
-    background: chartreuse;
+    background: var(--color-grayish);
     margin: 4px;
     border-radius: 4px;
 }
 main section img{
-    width: 90%;
+    width: 100%;
     height: 90%;
 }
 .price{
@@ -140,14 +172,11 @@ main section img{
     font-size: 12px;
     justify-content: space-between;
 }
-/* Custom header img for other page*/
-.headerImgReduced{ 
-    height: 10vh;
-    width: 100%;
-}
+
 /* -------------------------------- About Page -------------------------*/
 .title{
     text-align: center;
+    color: white;
 }
 #aboutMain{
     align-items: flex-start;
@@ -160,12 +189,22 @@ main section img{
     margin: 4px;
     word-wrap: break-word;
     font-size: 13px;
+    box-shadow: 0 1px 0 black;
+}
+.aboutCardLeft{
+    border-radius: 0 4px 0 0;
 }
 .aboutCardRight{
+    color: white;
+    background: var(--color-bluish);
+    box-shadow: 0px 1px 0px rgb(54, 112, 150);
     align-self: flex-end;
     text-align: end;
+    border-radius: 4px 0 0 0;
 }
 .aboutCardCenter{
     align-self: center;
     text-align: center;
+    background: var(--color-blackbrownish);
+    color: white;
 }
