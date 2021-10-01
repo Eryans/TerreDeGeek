@@ -9,13 +9,13 @@ nav{
     justify-content: space-between;
 }
 nav>div>button{
-    width: 15vw;
+    width: auto;
     text-align: left;
 }
 /* --------------------- Header -----------------*/
 header{
     position: relative;
-    background: green;
+    background: rgb(0, 255, 0);
 }
 header>div{
     position: absolute;
@@ -24,7 +24,6 @@ header>div{
 }
 .headerImg{
     width: 100%;
-    height: 50vh;
 }
 /* ------------------ Main -----------------------*/
 main{
@@ -114,13 +113,45 @@ li{
 }
 
 /** -------------------------- Product Page ---------------------- */
+main>section{
+    align-items: center;
+}
 main>section>article{
     align-items: center;
+    width:90%;
+    background: chartreuse;
+    margin: 4px;
+    border-radius: 4px;
 }
 main section img{
     width: 90%;
     height: 90%;
 }
 .price{
+    margin: 0;
+    padding: 0;
     height: 5vh;
+    font-size: 12px;
+    justify-content: space-between;
+}
+/* Custom header img for other page*/
+.headerImgReduced{ 
+    height: 10vh;
+    width: 100%;
+}
+/* -------------------------------- About Page -------------------------*/
+#aboutMain{
+    align-items: flex-start;
+}
+.aboutCard{
+    background: white;
+    height: 25vh;
+    width: 80%;
+    display: inline-block;
+    padding: 4px;
+    margin: 4px;
+    word-wrap: break-word;
+}
+.aboutCardRight{
+    align-self: flex-end;
 }
