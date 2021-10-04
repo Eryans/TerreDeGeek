@@ -14,23 +14,15 @@ nav{
     width: 100%;
     justify-content: space-between;
 }
-nav>div>button{
+nav>div>a{
     opacity: 1;
     width: auto;
     text-align: left;
-    background: rgba(107, 107, 107, 0);
-    border:1px solid var(--color-grayish);
     text-decoration: none;
 }
 nav a{
     color:var(--color-grayish);
     text-decoration: none;
-}
-nav>div>button:hover{
-    color: red;
-}
-nav a:visited{
-    color: var(--color-grayish);
 }
 /* --------------------- Header -----------------*/
 header{
@@ -89,6 +81,9 @@ main>div>article>div>ul>li{
     word-wrap: break-word;
     text-align: center;
 }
+article .fas {
+    color:var(--color-blackbrownish);
+}
 /* -------------------------------- footer -------------------- */
 footer{
     background: var(--color-greenishblue);
@@ -103,6 +98,8 @@ footer{
     text-align: center;
     font-size: 10px;
     box-shadow: 1px 1px 0px #6fa1a3;}
+
+/* ---------------------------- Classes and global -------------------------- */
 ul{
     margin:0;
     padding: 0;
@@ -112,7 +109,9 @@ li{
     list-style: none;
 }
 
-/* ---------------------------- Classes and global -------------------------- */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Share Tech Mono','monospace';
+}
 .contact{
     justify-content: space-evenly;
 }
