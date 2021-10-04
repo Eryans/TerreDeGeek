@@ -13,6 +13,7 @@ nav{
     z-index: 1;
     width: 100%;
     justify-content: space-between;
+    font-size: 2em;
 }
 nav>div>a{
     opacity: 1;
@@ -189,6 +190,7 @@ main section img{
     width: 80%;
     display: inline-block;
     margin: 4px;
+    padding: 0 5px 0 5Px;
     word-wrap: break-word;
     font-size: 13px;
     box-shadow: 0 1px 0 black;
