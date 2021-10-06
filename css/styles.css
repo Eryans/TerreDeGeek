@@ -1,6 +1,6 @@
 
 /* ------------------- Var -------------------*/
-:root{
+*{
     --color-grayish : #d9d9d9;
     --color-greenishblue : rgb(60,110,113);
     --color-blackbrownish : #353535;
@@ -183,7 +183,7 @@ main>section{
 .producecardFull{
     align-items: center;
     width:90%;
-    background: var(--color-grayish);
+    background: var(--color-bluish);
     margin: 4px;
     border-radius: 4px;
 }
@@ -197,6 +197,7 @@ main section img{
     width: 100%;
 }
 .price{
+    flex-flow: column wrap;
     padding: 2em;
     height: 100%;
     width:100%;
@@ -204,8 +205,12 @@ main section img{
     justify-content: space-around;
 }
 .price>h2{
+    order:1;
     height:100%;
     width: 100%;
+}
+.price a i{
+    
 }
 .producecardFull a{
     order: 1;
@@ -271,6 +276,13 @@ main section img{
     }
     .footerSection{
         width:40em;
+    }
+    /*--------Products---------*/
+    .price{
+        flex-flow: row nowrap;
+    }
+    .price a i{
+        font-size: 2em;
     }
 }
 @media (min-width:900px) {
