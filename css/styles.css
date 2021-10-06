@@ -3,8 +3,10 @@
 *{
     --color-grayish : #d9d9d9;
     --color-greenishblue : rgb(60,110,113);
+    --color-greenishblue-gradient:linear-gradient(0deg, rgba(28,66,84,1) 0%, rgba(60,110,113,1) 41%, rgba(88,177,154,1) 100%);
     --color-blackbrownish : #353535;
     --color-bluish : #284B63;
+    --color-bluish-gradient: linear-gradient(25deg, rgb(14, 38, 54) 0%, rgba(40,75,99,1) 53%, rgb(151, 172, 187) 100%);
 }
 body{
     margin: 0;
@@ -33,11 +35,13 @@ nav i{
 }
 
 nav div:first-child i:hover{
-    transform: scale(1.5);
+    transform: scale(1.5) rotate(10deg);
+    padding-right: 0.2em;
     padding-left: 0.2em;
 }
 nav div:last-child i:hover{
-    transform: scale(1.5);
+    transform: scale(1.5) rotate(-10deg);
+    padding-left: 0.2em;
     padding-right: 0.2em;
 }
 /* --------------------- Header -----------------*/
@@ -62,6 +66,11 @@ header>div{
     opacity: 35%;
     transform: scaleX(-1);
 }
+.headerTitle{
+    background-color:rgba(60,110,113,.3);
+    padding: 1.5rem;
+    border-radius: 4px;
+}
 /* ------------------ Main -----------------------*/
 main{
     background: rgb(255, 255, 255);
@@ -75,7 +84,7 @@ main{
     align-items: center;
 }
 .producecard{
-    background: var(--color-bluish);
+    background: var(--color-bluish-gradient);
     width:80%;
     height: 45%;
     margin-bottom: 3.5rem;
@@ -117,7 +126,7 @@ article .fas {
 /* -------------------------------- footer -------------------- */
 footer{
     align-self: flex-end;
-    background: var(--color-greenishblue);
+    background: var(--color-greenishblue-gradient);
     justify-content: center;
     margin-top: 5rem;
 }
@@ -132,9 +141,7 @@ footer{
     box-shadow: 1px 1px 0px #6fa1a3;}
 
 /* ---------------------------- Classes and global -------------------------- */
-input:invalid{
-    border-color: red;
-}
+
 a{
     text-decoration: none;
     color: var(--color-grayish);
@@ -215,7 +222,7 @@ main>section{
 .producecardFull{
     align-items: center;
     width:90%;
-    background: var(--color-bluish);
+    background: var(--color-bluish-gradient);
     margin: 4px;
     border-radius: 4px;
 }
@@ -308,15 +315,33 @@ iframe{
     padding: 1rem;
     margin-bottom: 5rem;
 }
+.videoCardCenter{
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    height:40vh;
+    background: var(--color-blackbrownish);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
 #age{
     width:3rem;
 }
+input:invalid{
+    /*Todo*/
+}
 /*-------------------------PRESTA-----------------------*/
-.tableContainer{
-    
+table{
+    background-color: var(--color-blackbrownish);
+    width: 60vw;
+    height:35vh;
+    color:white;
+    font-size: 1.2rem;
 }
 table,thead,tr,td{
-    border: 2px solid black;
+    border: 2px solid var(--color-bluish);
+    border-radius: 2px;
 }
 @media (min-width:500px) {
     /*--------------header+nav---------------*/
@@ -346,6 +371,10 @@ table,thead,tr,td{
     }
     .price a i{
         font-size: 2em;
+    }
+    /*----------------table----------------*/
+    table{
+        width:90vw;
     }
 }
 @media (min-width:900px) {
