@@ -38,7 +38,7 @@
         <div>
           <a href="../index.html"><i class="fas fa-home"></i></a>
           <a href="../pages/About.html"><i class="fas fa-address-card"></i></a>
-          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="../pages/Presta.html"><i class="fas fa-comments-dollar"></i></a>
         </div>
         <div>
           <a href="#"><i class="fas fa-user"></i></a>
@@ -51,12 +51,54 @@
   <!--####################### MAIN ###########################-->
   <main id="contactMain" class="flexcolumn">
     <h1 class="title">Où nous trouver/contacter ?</h1>
-    <section class="aboutCard aboutCardCenter">
-      <h2>Par mail</h2>
-      <form method="post" action="mailto:tayrdegik@geek.com">
-        <input type="text" placeholder="Ecrivez nous ici !">
-        <input type="submit">  
-      </form>
+    <section class="aboutCard aboutCardCenter flexcolumn">
+      <h2>Par mail:</h2>
+      <div class="formcontainer centered">
+        <form method="post" action="#">
+          <label for="firstname" >
+            Votre prénom:
+          </label>
+          <input type="text" name="firstname" id="firstname" minlength="2" maxlength="40" required>
+          <br>
+          <label for="lastname">
+            Votre nom:
+          </label>
+          <input type="text" name="lastname" id="lastname" minlength="2" maxlength="40" required> 
+          <br>
+          <label for="phone">
+            Votre numéro de tel:
+          </label>
+          <input type="tel" pattern="[0-9]{10}" name="phone" id="phone" maxlength="10" required>
+          <br>
+          <label for="usermail">
+            Votre adresse mail:
+          </label>
+          <input type="email" name="usermail" id="usermail" placeholder="example@gmail.com" required>
+          <br>
+          <label for="age">
+            Votre age:
+          </label>
+          <input type="number" name="age" id="age" required>
+          <br>
+          <label for="objectmessage">
+            Objet:
+          </label>
+          <select id=objectmessage" name="objectmessage">
+            <option value="1">Réclamation</option>
+            <option value="2">Information</option>
+            <option value="3">Partenariat</option>
+            <option value="4">Autres</option>
+          </select>
+          <br>
+          <label for="textmail">
+            <textarea name="textmail" id="textmail" rows="8" cols="30">Ecrivez votre e-mail ici !
+            </textarea>
+          </label>
+          <br>
+          <label for="submit"></label>
+          <input type="submit" name="submit" id="submit" value="Envoyez">
+        </form>
+      </div>
     </section>
     <section class="aboutCard aboutCardLeft">
       <h2>Alençon</h2>
@@ -87,11 +129,11 @@
       </p>
     </section>
       <section>
-          <ul class="contact flexrow">
-            <li><a href="https://twitter.com/JulesNoir" target="_blank"><img class="icon" src="../img/twitterIcon.png" alt="Icone de Twitter"></a></li>
-            <li><a href="https://github.com/Eryans" target="_blank"><img class="icon" src="../img/githubIcon.png" alt="Icone de Github"></a></li>
-            <li><a href="https://www.facebook.com/profile.php" target="_blank"><img class="icon" src="../img/facebookIcon.png" alt="Icone de facebook"></a></li>
-          </ul>
+        <ul class="contact flexrow">
+          <li><a href="https://twitter.com/JulesNoir" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a href="https://github.com/Eryans" target="_blank"><i class="fab fa-github-square"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        </ul>
       </section>
   </footer>
 

@@ -18,8 +18,8 @@
   <script src="https://kit.fontawesome.com/385bfda247.js" crossorigin="anonymous"></script>
   <link rel ="shortcut icon" href="favicon.png"> 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="../../css/main.css">
-  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,10 +36,9 @@
     <div>
       <nav class="flex">
         <div>
-          <a href="../../index.html"><i class="fas fa-home"></i></a>
-          <a href="../../pages/About.html"><i class="fas fa-address-card"></i></a>
-          <a href="../../pages/Contact.html"><i class="fas fa-envelope"></i></a>
-          <a href="../../pages/Presta.html"><i class="fas fa-comments-dollar"></i></a>
+          <a href="../index.html"><i class="fas fa-home"></i></a>
+          <a href="../pages/About.html"><i class="fas fa-address-card"></i></a>
+          <a href="../pages/Contact.html"><i class="fas fa-envelope"></i></a>
         </div>
         <div>
           <a href="#"><i class="fas fa-user"></i></a>
@@ -50,24 +49,49 @@
     </div>
   </header>
   <!--####################### MAIN ###########################-->
-  <main class="flexcolumn mainProduct">
-  <section class="productPage flexcolumn">
-    <article class="flexcolumn producecardFull">
-      <img src="../../img/occulus.jpg" alt="image du produit" >
-      <div class="itemdescription">
-        <div class="flex price">
-          <a href="../../index.html"><i class="fas fa-arrow-circle-left" alt="go back button"></i></a>
-          <h2>Occulus Drift</h2>
-          <h2>Prix : 499.99 €</h3>
-          <div class="kart flex">
-            <a class="flex" href="#"><i class="fas fa-cart-plus"></i></a>
-          </div>
-        </div>
-        <p> <strong>Le pouvoir de la réalité virtuelle est là !</strong> <br>Quasi explicabo repudiandae sequi commodi labore? Delectus fuga, animi quae ab fugit doloremque cumque nesciunt ullam ex voluptate illum cupiditate neque libero?</p>
-      </div>
-    </article>
-  </section>
-  </main>
+  <main id="prestaMain" class="flexcolumn centered">
+    <div class="tableContainer">
+      <table>
+        <thead>
+          <tr>
+            <th>Prestations et services</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Prestation:</td>
+            <td>Prestataire:</td>
+            <td>Prix:</td>
+          </tr>
+          <tr>
+            <td>Réparation Smartphone</td>
+            <td>Roger</td>
+            <td>59.99 €</td>
+          </tr>
+          <tr>
+            <td>Réparation Tablette</td>
+            <td>Roger</td>
+            <td>109.99 €</td>
+          </tr>
+          <tr>
+            <td>Réparation Ordinateur</td>
+            <td>Roger</td>
+            <td>129.99 €</td>
+          </tr>
+          <tr>
+            <td>Commande spécial</td>
+            <td>Roger</td>
+            <td>Devis requis</td>
+          </tr>
+          <tr>
+            <td>Impression 3D</td>
+            <td>Roger</td>
+            <td>129.99 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   </main>
   <!--####################### FOOTER ###########################-->
   <footer class="flexcolumn">
     <section class="footerSection">
@@ -80,11 +104,11 @@
       </p>
     </section>
       <section>
-        <ul class="contact flexrow">
-          <li><a href="https://twitter.com/JulesNoir" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-          <li><a href="https://github.com/Eryans" target="_blank"><i class="fab fa-github-square"></i></a></li>
-          <li><a href="https://www.facebook.com/profile.php" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-        </ul>
+          <ul class="contact flexrow">
+            <li><a href="https://twitter.com/JulesNoir" target="_blank"><img class="icon" src="../img/twitterIcon.png" alt="Icone de Twitter"></a></li>
+            <li><a href="https://github.com/Eryans" target="_blank"><img class="icon" src="../img/githubIcon.png" alt="Icone de Github"></a></li>
+            <li><a href="https://www.facebook.com/profile.php" target="_blank"><img class="icon" src="../img/facebookIcon.png" alt="Icone de facebook"></a></li>
+          </ul>
       </section>
   </footer>
 
