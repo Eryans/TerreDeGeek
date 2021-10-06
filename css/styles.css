@@ -102,6 +102,7 @@ main{
 }
 .producecard a{
     width: 50%;
+    color:rgb(130, 245, 201);
 }
 .producecard img{
     width:100%;
@@ -127,18 +128,20 @@ article .fas {
 footer{
     align-self: flex-end;
     background: var(--color-greenishblue-gradient);
+    border-top:solid 1px #92c3c5;
     justify-content: center;
     margin-top: 5rem;
 }
 .footerSection{
     background: var(--color-blackbrownish);
     color:#d9d9d9;
+    border-top: solid rgb(37, 37, 37) 1px;
     border-radius: 0 0 4px 4px;
     width: 80%;
     align-self: center;
     text-align: center;
     font-size: 10px;
-    box-shadow: 1px 1px 0px #6fa1a3;}
+    box-shadow: 1px 1px 0px #6fa1a3,-1px 0px 0px #000000;}
 
 /* ---------------------------- Classes and global -------------------------- */
 
