@@ -20,22 +20,25 @@ nav>div>a{
     text-decoration: none;
 }
 nav a{
+    font-size: 2em;
     color:var(--color-grayish);
     text-decoration: none;
 }
 /* --------------------- Header -----------------*/
 header{
     position: relative;
-    min-height: 15vh;
+    min-height: 25vh;
     background: var(--color-bluish);
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 header>div{
-    position: absolute;
     color: white;
     top:0;
     padding: 2rem;
-    font-size: 20px;
+    font-size: 1.2rem;
+}
+.absolute{
+    position: absolute;
 }
 .headerImg{
     width: 100%;
@@ -48,34 +51,41 @@ main{
     background: rgb(255, 255, 255);
     min-height: 80vh;
 }
-main>div{
+.title{
+    color:var(--color-blackbrownish);
+}
+.container{
     flex-flow: column wrap;
     align-items: center;
 }
-main>div>article{
+.producecard{
     background: var(--color-bluish);
     width:80%;
-    height: 45vh;
-    margin: 10px 0 10px 0;
+    height: 45%;
+    margin-bottom: 3.5rem;
     border-radius: 4px;
     box-shadow: black 0px 1px 3px;
 }
-main>div>article>div{
-    height:60%;
+.producecard figure{
+    margin:0;
+    height: 100%;
+    width: 100%;
 }
-main>div>article>div>a>img{
+.producecard a{
+    width: 50%;
+}
+.producecard img{
     width:100%;
     height: 100%;
     border-radius: 4px 0 0 0;
 }
 main>div>article>div>ul{
+    width:50%;
     background: var(--color-grayish);
     justify-content:space-around;
     border-radius: 0 4px 0 0;
 }
 main>div>article>div>ul>li{
-    display: inline-block;
-    width: 30vw;
     padding: 0.5rem;
     margin: 0.5rem;
     word-wrap: break-word;
@@ -101,6 +111,13 @@ footer{
     box-shadow: 1px 1px 0px #6fa1a3;}
 
 /* ---------------------------- Classes and global -------------------------- */
+a{
+    text-decoration: none;
+    color: var(--color-grayish)
+}
+a:hover{
+    color:turquoise;
+}
 ul{
     margin:0;
     padding: 0;
@@ -137,13 +154,24 @@ h1,h2,h3,h4,h5,h6{
     height:30px;
     width: 30px;
 }
-
+.centered{
+    justify-content: center;
+    align-items: center;
+}
 /* Custom header img for other page*/
 .headerImgReduced{ 
     height: 10vh;
     width: 100%;
 }
-
+.itemdescription{
+    height: fit-content;
+    color:white;
+    width:100%;
+    flex-wrap: wrap;
+}
+.itemdescription p{
+    padding: 1em;
+}
 /** -------------------------- Product Page ---------------------- */
 .mainProduct{
     justify-content: center;
@@ -152,7 +180,7 @@ h1,h2,h3,h4,h5,h6{
 main>section{
     align-items: center;
 }
-main>section>article{
+.producecardFull{
     align-items: center;
     width:90%;
     background: var(--color-grayish);
@@ -164,22 +192,35 @@ main section img{
     height: 90%;
     border-radius: 4px 4px 0 0;
 }
+.producecardFull>img{
+    height: 100%;
+    width: 100%;
+}
 .price{
-    margin: 0;
-    padding: 4px;
-    height: 5vh;
-    font-size: 12px;
-    justify-content: space-between;
+    padding: 2em;
+    height: 100%;
+    width:100%;
+    font-size: 1rem;
+    justify-content: space-around;
 }
-.itemdescription{
-    background: var(--color-bluish);
-    color:white;
-    padding: 1px;
+.price>h2{
+    height:100%;
+    width: 100%;
 }
+.producecardFull a{
+    order: 1;
+    color: var(--color-grayish);
+    height:100%;
+    width: 100%;
+    font-size: 2em;
+}
+.producecardFull i{
+    color: var(--color-grayish);
+}
+
 /* -------------------------------- About Page -------------------------*/
 .title{
     text-align: center;
-    color: white;
 }
 #aboutMain{
     align-items: flex-start;
@@ -211,4 +252,34 @@ main section img{
     background: var(--color-blackbrownish);
     color: white;
     margin-bottom: 5rem;
+}
+@media (min-width:500px) {
+    /*--------------header+nav---------------*/
+    nav a {
+        font-size: 2.5rem;
+    }
+
+    /*--------------Main-----------------*/
+
+    .producecard{
+        width:30em;
+        margin:2em;
+    }
+    /*----------About------------*/
+    .aboutCard{
+        font-size: 1.5em;
+    }
+    .footerSection{
+        width:40em;
+    }
+}
+@media (min-width:900px) {
+    /*--------------Main-----------------*/
+    .container{
+        flex-flow: row wrap;
+    }
+    .producecard{
+        width:35em;
+        margin:2em;
+    }
 }

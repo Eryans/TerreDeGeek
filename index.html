@@ -30,12 +30,11 @@
 
 <body>
   <!-- Add your site or application content here -->
-  <!--####################### NAV ###########################-->
 
-  <!--####################### HEADER ###########################-->
+  <!--####################### HEADER+NAV ###########################-->
   <header>
     <img class="headerImg" src="img/motherboardBG.jpg" alt="image de fond">
-    <div class="flexcolumn">
+    <div class="flexcolumn absolute">
       <nav class="flex">
         <div>
           <a href="#"><i class="fas fa-home"></i></a>
@@ -55,13 +54,17 @@
   </header>
   <!--####################### MAIN ###########################-->
   <main>
-    <div class="container flex">
       <div class="title">
         <h2>Nos Produits phares:</h2>
       </div>
-      <article class="flexcolumn card">
+    <div class="container flex centered">
+      <article class="flexcolumn producecard">
         <div class="flexrow">
-          <a href="pages/products/Product.html"><img src="img/occulus.jpg" alt="image du produit" ></a>
+          <a href="pages/products/Product.html">
+            <figure>
+              <img src="img/occulus.jpg" alt="image du produit" >
+            </figure>
+          </a>
           <ul class="flexcolumn">
             <li>Occulus Drift</li>
             <li>499.99 €</li>
@@ -72,9 +75,13 @@
           <p> <strong>Le pouvoir de la réalité virtuelle est là !</strong> Expedita neque deleniti saepe hic consequatur optio perspiciatis<a href="pages/products/Product.html">...Read more</a></p>
         </div>
       </article>
-      <article class="flexcolumn card">
-        <div class="flexrow">
-          <a href="pages/products/Product1.html"><img src="img/Dorotay.jpg" alt="image du produit Discolaser de Dorothée"></a>
+      <article class="flexcolumn producecard">
+        <div class="flexrow ">
+          <a href="pages/products/Product1.html">
+            <figure>
+              <img src="img/Dorotay.jpg" alt="image du produit Discolaser de Dorothée">
+            </figure>
+            </a>
           <ul class="flexcolumn">
             <li>Discolaser de Dorothée</li>
             <li>9.99 €</li>
@@ -85,17 +92,21 @@
           <p><strong>Pour repousser les envahisseur tsèrkonoïd de l'espace Mammouth.</strong> onsequatur optio perspiciatis<a href="pages/products/Product1.html">...Read more</a></p>
         </div>
       </article>
-      <article class="flexcolumn card">
+      <article class="flexcolumn producecard">
         <div class="flexrow">
-          <a href="pages/products/Product2.html"><img src="img/pikachuBonnet.jpg" alt="image du produit Bonnet Pikachu"></a>
-          <ul class="flexcolumn">
+          <a href="pages/products/Product2.html">
+            <figure>
+              <img src="img/pikachuBonnet.jpg" alt="image du produit Bonnet Pikachu">
+            </figure>
+          </a>
+          <ul class="flexcolumn ">
             <li>Bonnet Pikachu</li>
             <li>29.99 €</li>
             <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
           </ul>
         </div>
         <div class="itemdescription">
-        <p><strong>Avec lui vous serez le plus mignon des pokémon!</strong> Expedita neque deleniti saepe hic consequatur optio perspiciatis<a href="pages/products/Product2.html">...Read more</a></p>
+          <p><strong>Avec lui vous serez le plus mignon des pokémon!</strong> Expedita neque deleniti saepe hic consequatur optio perspiciatis<a href="pages/products/Product2.html">...Read more</a></p>
         </div>
       </article>
     </div>
