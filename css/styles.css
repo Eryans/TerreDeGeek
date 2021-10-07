@@ -73,7 +73,6 @@ header>div{
 }
 /* ------------------ Main -----------------------*/
 main{
-    background: rgb(255, 255, 255);
     min-height: 50vh;
 }
 .title{
@@ -105,8 +104,8 @@ main{
     color:rgb(130, 245, 201);
 }
 .producecard img{
-    width:100%;
-    height: 100%;
+    max-width:100%;
+    max-height: 100%;
     border-radius: 4px 0 0 0;
 }
 main>div>article>div>ul{
@@ -228,6 +227,7 @@ main>section{
     background: var(--color-bluish-gradient);
     margin: 4px;
     border-radius: 4px;
+    box-shadow: 5px 5px 25px rgb(163, 163, 163),-5px -5px 25px rgb(163, 163, 163);
 }
 main section img{
     width: 100%;
@@ -381,6 +381,9 @@ table,thead,tr,td{
     }
 }
 @media (min-width:900px) {
+    header>div{
+        width:96vw;
+    }
     /*--------------Main-----------------*/
     .container{
         flex-flow: row wrap;
