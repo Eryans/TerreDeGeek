@@ -13,7 +13,9 @@ body{
     margin: 0;
     height: 100vh;
 }
-
+html{
+    background-color:rgb(151, 172, 187);
+}
 /* ------------------- Nav -----------------*/
 nav{
     width: 100%;
@@ -52,6 +54,7 @@ header{
     min-height: 15%;
     background: var(--color-bluish-gradient2);
     margin-bottom: 2rem;
+    box-shadow: 2px 2px 50px rgba(8, 25, 44, 0.466);
 }
 header>div{
     color: white;
@@ -138,6 +141,7 @@ footer{
     justify-content: center;
     margin-top: 5rem;
     min-height: 15%;
+    box-shadow: -2px -2px 50px rgba(41, 80, 77, 0.63);
 }
 .footerSection{
     background: var(--color-blackbrownish);
