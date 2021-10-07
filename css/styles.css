@@ -49,7 +49,7 @@ nav div:last-child i:hover{
 /* --------------------- Header -----------------*/
 header{
     position: relative;
-    min-height: 25vh;
+    min-height: 15%;
     background: var(--color-bluish-gradient2);
     margin-bottom: 2rem;
 }
@@ -75,7 +75,7 @@ header>div{
 }
 /* ------------------ Main -----------------------*/
 main{
-    min-height: 50vh;
+    min-height: 70%;
 }
 .title{
     color:var(--color-blackbrownish);
@@ -137,6 +137,7 @@ footer{
     border-top:solid 1px #92c3c5;
     justify-content: center;
     margin-top: 5rem;
+    min-height: 15%;
 }
 .footerSection{
     background: var(--color-blackbrownish);
@@ -172,7 +173,8 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Share Tech Mono','monospace';
 }
 .contact{
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:3.5em;
     font-size: 3rem;
 }
 .flex{
