@@ -85,7 +85,7 @@ main{
 .producecard{
     background: var(--color-bluish-gradient);
     width:80%;
-    height: 45%;
+    height: 35vh;
     margin-bottom: 3.5rem;
     border-radius: 4px;
     box-shadow: black 0px 1px 3px;
@@ -100,12 +100,17 @@ main{
     width: 100%;
 }
 .producecard a{
-    width: 50%;
+    width:60%;
+    height:100%;
     color:rgb(130, 245, 201);
 }
+.producecardContainerUp{
+    width:100%;
+    height:60%;
+}
 .producecard img{
-    max-width:100%;
-    max-height: 100%;
+    width:100%;
+    height: 100%;
     border-radius: 4px 0 0 0;
 }
 main>div>article>div>ul{
@@ -389,7 +394,8 @@ table,thead,tr,td{
         flex-flow: row wrap;
     }
     .producecard{
-        width:35em;
+        width:30em;
+        height:35rem;
         margin:2em;
     }
 }
