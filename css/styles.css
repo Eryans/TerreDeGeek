@@ -7,6 +7,7 @@
     --color-blackbrownish : #353535;
     --color-bluish : #284B63;
     --color-bluish-gradient: linear-gradient(25deg, rgb(14, 38, 54) 0%, rgba(40,75,99,1) 53%, rgb(151, 172, 187) 100%);
+    --color-bluish-gradient2: linear-gradient(180deg, rgba(7,26,43,1) 0%, rgba(40,75,99,1) 50%, rgba(68,123,143,1) 100%);
 }
 body{
     margin: 0;
@@ -48,7 +49,7 @@ nav div:last-child i:hover{
 header{
     position: relative;
     min-height: 25vh;
-    background: var(--color-bluish);
+    background: var(--color-bluish-gradient2);
     margin-bottom: 2rem;
 }
 header>div{
@@ -397,5 +398,14 @@ table,thead,tr,td{
         width:30em;
         height:35rem;
         margin:2em;
+    }
+    .producecardFull{
+        width:60%;
+        height:50vh;
+        margin: 0.5em;
+        flex-direction: row;
+    }
+    .producecardFull .itemdescription{
+        flex-direction: column;
     }
 }
