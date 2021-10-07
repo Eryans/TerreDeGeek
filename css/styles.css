@@ -13,6 +13,7 @@ body{
     margin: 0;
     height: 100vh;
 }
+
 /* ------------------- Nav -----------------*/
 nav{
     width: 100%;
@@ -387,6 +388,14 @@ table,thead,tr,td{
     }
 }
 @media (min-width:900px) {
+    header{
+        background-image: url("../img/459032.jpg");
+        background-size: 100%;
+    }
+    .headerImg{
+        opacity:0;
+    }
+    
     header>div{
         width:96vw;
     }
