@@ -124,11 +124,11 @@ main{
 main>div>article>div>ul{
     width:50%;
     background: white;
-    justify-content:space-around;
+    justify-content:center;
     border-radius: 0 4px 0 0;
 }
 main>div>article>div>ul>li{
-    font-size: 1em;
+    font-size: 1.8em;
     padding: 0.5rem;
     margin: 0.5rem;
     word-wrap: break-word;
@@ -385,7 +385,16 @@ tr:nth-child(odd) td{
 table tr:nth-child(even){
     background-color: var(--color-bluish);
 }
-@media (max-height:900px){
+@media (max-height:500px){
+    .producecard{
+        font-size:0.8em;
+        height:60vh;
+    }
+    .producecard ul{
+        font-size: 0.5em;
+    }
+}
+@media (max-height:900px) and (min-height:500px){
     .producecard{
         font-size:0.8em;
         height:50vh;
