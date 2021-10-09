@@ -396,7 +396,7 @@ table tr:nth-child(even){
 }
 @media (max-height:900px) and (min-height:500px){
     .producecard{
-        font-size:0.8em;
+        font-size:1em;
         height:50vh;
     }
     .producecard ul{
